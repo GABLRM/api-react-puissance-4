@@ -1,0 +1,10 @@
+version: "3.3"
+
+services:
+  redis:
+    image: redis:6.0.5
+    restart: unless-stopped
+    ports:
+      - 6379:6379
+    environment:
+      REDIS_PASSWORD: password123
