@@ -6,43 +6,42 @@ Cette api est dédiée à l'utilisation des websockets pour le projet [Puissance
 
 ## Sommaire
 
-- [I - Prérequis]()
-- [II - Installation]()
-- [III - Lancement]()
-- [III - Crédits]()
+- [Sommaire](#sommaire)
+- [I - Prérequis](#i---prérequis)
+- [II - Installation](#ii---installation)
+- [III - Lancement](#iii---lancement)
+- [IV - Crédits](#iv---crédits)
 
 ## I - Prérequis
 
-Pour le bon lancement de cette api vous avez besoin de : 
+Pour le bon lancement de cette api vous avez besoin de :
 
 - Node.js
 - Docker
 
-
 ## II - Installation
 
-Pour récupérer le projet, vous devez clone ce repository avec la commande suivante : 
+Pour récupérer le projet, vous devez clone ce repository avec la commande suivante :
 
 ```bash
 git clone https://github.com/GABLRM/api-react-puissance-4.git
 ```
 
-Ensuite, il est nécessaire d'installer les dependances du projet : 
+Ensuite, il est nécessaire d'installer les dependances du projet :
 
 ```bash
 npm i
 ```
 
-
 ### III - Lancement
 
-Pour lancer l'api, vous devez lancer le container Docker de Redis avec cette commande : 
+Pour lancer l'api, vous devez lancer le container Docker de Redis avec cette commande :
 
 ```bash
 docker-compose up -d
 ```
 
-Et pour terminer, une fois le docker en route, vous devez lancer l'api avec cette commande : 
+Et pour terminer, une fois le docker en route, vous devez lancer l'api avec cette commande :
 
 ```bash
 npm run start
