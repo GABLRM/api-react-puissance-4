@@ -1,73 +1,53 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+# Api -Puissance 4 - React (En cours de développement)
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+Ce projet est une reprise du jeu [Puissance 4](https://fr.wikipedia.org/wiki/Puissance_4) conçu en [React](https://react.dev/).
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+Cette api est dédiée à l'utilisation des websockets pour le projet [Puissance 4](https://github.com/GABLRM/React-Puissance-4)
 
-## Description
+## Sommaire
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+- [I - Prérequis]()
+- [II - Installation]()
+- [III - Lancement]()
+- [III - Crédits]()
 
-## Installation
+## I - Prérequis
+
+Pour le bon lancement de cette api vous avez besoin de : 
+
+- Node.js
+- Docker
+
+
+## II - Installation
+
+Pour récupérer le projet, vous devez clone ce repository avec la commande suivante : 
 
 ```bash
-$ npm install
+git clone https://github.com/GABLRM/api-react-puissance-4.git
 ```
 
-## Running the app
+Ensuite, il est nécessaire d'installer les dependances du projet : 
 
 ```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
+npm i
 ```
 
-## Test
+
+### III - Lancement
+
+Pour lancer l'api, vous devez lancer le container Docker de Redis avec cette commande : 
 
 ```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
+docker-compose up -d
 ```
 
-## Support
+Et pour terminer, une fois le docker en route, vous devez lancer l'api avec cette commande : 
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+```bash
+npm run start
+```
 
-## Stay in touch
+## IV - Crédits
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+Ce projet a été réalisé par Luka GARCIA et Gabriel LAROUMANIE dans le cadre de notre Bachelor 3 Informatique chez Bordeaux YNOV Campus.
